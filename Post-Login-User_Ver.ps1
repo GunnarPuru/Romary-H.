@@ -21,7 +21,7 @@ $textbox.Location = New-Object System.Drawing.Point(85,90)
 $textbox.Size = New-Object System.Drawing.Size(280,20)
 $form.Controls.Add($textbox)
 
-# Create an OK button
+# Creation of an OK button
 $button = New-Object System.Windows.Forms.Button
 $button.Location = New-Object System.Drawing.Point(175,125)
 $button.Size = New-Object System.Drawing.Size(100,30)
@@ -30,7 +30,7 @@ $button.DialogResult = [System.Windows.Forms.DialogResult]::OK
 $form.AcceptButton = $button
 $form.Controls.Add($button)
 
-# Show the form as a dialog box
+# Displaying the form as a dialog box
 $result = $form.ShowDialog()
 
 # Check if OK button is clicked and name is provided
